@@ -1,0 +1,26 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Java / Maven
+backend/target/
+
+# Uploaded documents
+backend/uploads/
+
+# React / Node
+frontend/node_modules/
+frontend/dist/
+
+# IDE settings
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

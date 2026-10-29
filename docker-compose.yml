@@ -1,0 +1,16 @@
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: lexiscan-postgres
+    environment:
+      POSTGRES_DB: lexiscan
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
+    ports:
+      - "5432:5432"
+    volumes:
+      - lexiscan_pgdata:/var/lib/postgresql/data
+
+volumes:
+  lexiscan_pgdata:
